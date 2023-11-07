@@ -93,6 +93,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1716904312957406791}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5811b8d9687f7c1429be5a8625637428,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8761240214392207520}
   m_SourcePrefab: {fileID: 100100000, guid: 5811b8d9687f7c1429be5a8625637428, type: 3}
 --- !u!1 &8920422990951042311 stripped
 GameObject:
@@ -149,7 +153,7 @@ MonoBehaviour:
   snapAttachEaseInCompleted: 0
   skeletonPoser: {fileID: 0}
   handFollowTransform: 1
-  highlightOnHover: 1
+  highlightOnHover: 0
   hideHighlight: []
   hoverPriority: 0
 --- !u!54 &239523600574447106
@@ -196,7 +200,7 @@ MonoBehaviour:
   catchingSpeedThreshold: -1
   releaseVelocityStyle: 1
   releaseVelocityTimeOffset: -0.011
-  scaleReleaseVelocity: 1.1
+  scaleReleaseVelocity: 3
   scaleReleaseVelocityThreshold: -1
   scaleReleaseVelocityCurve:
     serializedVersion: 2
@@ -240,7 +244,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8920422990951042311}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e68fb30a64dc0b340887d392bca427ee, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -254,3 +258,18 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.002598076
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-8761240214392207520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8920422990951042311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783750eec4c41da428b7651515146d14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityAverageFrames: 20000
+  angularVelocityAverageFrames: 11
+  estimateOnAwake: 0
